@@ -1,0 +1,65 @@
+/home/tasneem/Master BHT Data Science/Advanced Software Engineering/Lec5_ Geo-Clustering/0_Exercise_env/core/FactorAnalysis.py:51: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  df_loadings.style.applymap(highlight_max)                   #Maxima farblich markieren
+/home/tasneem/Master BHT Data Science/Advanced Software Engineering/Lec5_ Geo-Clustering/0_Exercise_env/core/HelperTools.py:154: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  retDF = pd.concat([retDF, pd.DataFrame([dict_row])], ignore_index=True)
+Current working directory
+/home/tasneem/Master BHT Data Science/Advanced Software Engineering/Lec5_ Geo-Clustering/0_Exercise_env
+ ====> Duration 0.00 secs: 
+    Moves the last n columns of the DataFrame to the front.
+
+    Parameters:
+    df (pd.DataFrame): The DataFrame to reorder.
+    n (int): The number of columns from the end to move to the front.
+
+    Returns:
+    pd.DataFrame: The reordered DataFrame.
+    
+Eigenvalues > 1:  4 1. Eigenvalue /float_div 10.00:  4
+Number of features in configuration:  5
+min(Number Eigenvalues (ev) > 1, Number Ev > (1.Ev/10)):  4
+(232, 4)
+ ====> Duration 0.39 secs: Faktor analyzer with PCA & VARIMAX-rotation matrix
+['Tendency of having children', 'Population ratio: college degree', 'Interest: alternative energy', 'Main purchase criterion: brand/quality']
+ ====> Duration 0.02 secs: BIRCH-Clustering Algorithm
+OrderedDict({np.int64(1): 8, np.int64(2): 150, np.int64(3): 27, np.int64(4): 47})
+Numbers per cluster: 
+Effect table: 
+Marker 1 - getMeanTables
+Marker 2 - getMeanTables
+ ====> Duration 0.01 secs: Mean-Tables
+Marker 3 - getSeriesEtaSquared
+PackageName_Beach Escape 0.004497565391725919
+PackageName_City Break 0.008211045378232246
+PackageName_Cruise Getaway 0.016549591323573767
+PackageName_Mountain Adventure 0.008491385165319387
+PackageName_Safari Expedition 0.004444555573772675
+Population in the house 0.8516929652321011
+House size: number of flats 0.5647915911766005
+Status of Location 0.17781358398343783
+Tendency of having a photovoltaic system 0.05825876012642505
+Tendency of having children 0.7306418382520091
+Population density (households per qkm) 0.4389485450157412
+Population ratio: college degree 0.8743537269029569
+Population ratio: university degree 0.7747920638619236
+Population ratio: school diploma 0.886344922665837
+Interest: alternative energy 0.024081915470414873
+Interest: football 0.16863436129624915
+Interest: online shopping 0.3008270407623923
+Interest: travel 0.08508596524923238
+Interest: social media 0.5664250895270114
+Interest: politics 0.17414645335814496
+Interest: economics 0.05077137924455116
+Interest: green energy 0.5062473302023487
+Main purchase criterion: low price 0.4391622877603597
+Main purchase criterion: brand/quality 0.028000426423746883
+ ====> Duration 0.04 secs: Berechnung: Eta^2, gesamte Spalte
+Marker 1 - getMeanTables
+Marker 2 - getMeanTables
+ ====> Duration 0.00 secs: Mean-Tables
+ ====> Duration 0.08 secs: z-Transformationen der Effekte: Features auf Cluster
+ ====> Duration 0.03 secs: Sorts DataFrame
+ ====> Duration 0.16 secs: Calculate/Load effect analysis with data from DB 
+ ====> Duration 0.00 secs: Gets onehoted & summarized households for each cluster
+    
+    
+ ====> Duration 2.20 secs: Main: Customers' segmentation with geo-visualization
